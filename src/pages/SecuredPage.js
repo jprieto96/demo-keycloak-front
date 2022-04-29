@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function SecuredPage() {
     return (
         <div className="secured-page">

@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './NavBar.css'
 
 // CONTEXTS
-import { KeycloackContext } from '../../KeycloakContext'
+import { KeycloackContext } from 'KeycloakContext'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {

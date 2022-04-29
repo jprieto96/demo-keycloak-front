@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from './App'
-import { KeycloackContextProvider } from "./KeycloakContext"
+import App from 'App'
+import { KeycloackContextProvider } from "KeycloakContext"
  
 ReactDOM.render(
     <KeycloackContextProvider>
