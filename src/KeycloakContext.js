@@ -21,12 +21,15 @@ const KeycloackContextProvider = (props) => {
         }).then(authenticated => {
             setKeycloackValue(keycloak)
             setAuthenticated(authenticated)
+            sessionStorage.setItem('token', keycloak.token)
+            sessionStorage.setItem('refresh-token', keycloak.refreshToken)
         })
     }
 
     const logout = () => {
         setKeycloack(null)
         setAuthenticated(false)
+        sessionStorage.clear()
         keycloackValue.logout()
     }
 

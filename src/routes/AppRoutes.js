@@ -8,10 +8,10 @@ export default function AppRoutes() {
     return (
         <Router>
             <NavBar/>
-                <Routes>
-                    <Route exact path='/' element={<LandingPage />} />
-                    <Route exact path='/secured' element={<SecuredPage />} />
-                </Routes>
+            <Routes>
+                <Route exact path='/' element={<LandingPage />} />
+                <Route exact path='/secured' element={<SecuredPage />} />
+            </Routes>
         </Router>
     )
 }
