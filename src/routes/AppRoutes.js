@@ -1,4 +1,4 @@
-import LandingPage from 'pages/LandingPage'
+import ClientHomePage from 'pages/ClientHomePage'
 import SecuredPage from 'pages/SecuredPage'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import NavBar from 'components/NavBar/NavBar'
@@ -9,7 +9,7 @@ export default function AppRoutes() {
         <Router>
             <NavBar/>
             <Routes>
-                <Route exact path='/' element={<LandingPage />} />
+                <Route exact path='/' element={<ClientHomePage />} />
                 <Route exact path='/secured' element={<SecuredPage />} />
             </Routes>
         </Router>
